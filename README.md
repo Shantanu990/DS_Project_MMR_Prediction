@@ -33,8 +33,7 @@ combined into a single feature ‘Quality’.
 - Weight distribution for each feature importance is as follows: mileage- 41%, brand  category-17%, body- 16%, model-15%, state-5%, color-4%, quality-2%. 
 
 - To understand how strongly feature categories are associated with potential losses, Percentage Negative Deviation (PND) were calculated for each sub-category across all features by visualizing them in Power BI.
-- PND represents the proportion of samples where the MMR value exceeded the actual sale price (indicating a negative deviation or potential loss). For example, if 39,000 out of 75,000 'Luxury' brand vehicles
-  experienced a negative deviation, the PND for the 'Luxury' category would be 52%.
+- PND represents the proportion of samples where the MMR value exceeded the actual sale price (indicating a negative deviation or potential loss). For example, if 39,000 out of 75,000 'Luxury' brand vehicles experienced a negative deviation, the PND for the 'Luxury' category would be 52%.
 - These PND values were used in defining a 'risk score' for each category, a concept elaborated in the subsequent data preprocessing section.
 
 **Data Pre-processing**: 
@@ -42,9 +41,7 @@ To quantify the risk associated with each category across all seven features, a 
 1. Calculate adjusted risk score: 
  -The raw sample count is first normalized by dividing it by 3,00,000.
  -This normalized value and category’s PND value is then summed to together to yield and adjusted score.
-2. Find normalized value for risk scores:
-- The normalized risk scores for each category were appended to their corresponding rows/samples using VLOOKUP function. A Composite Risk Score was then generated for each individual vehicle by multiplying each
-category's risk score by its respective feature's weight
+2. Find normalized value for risk scores: The normalized risk scores for each category were appended to their corresponding rows/samples using VLOOKUP function. A Composite Risk Score was then generated for each individual vehicle by multiplying each category's risk score by its respective feature's weight
 
 This Composite Risk Score was instrumental in deriving a more optimized MMR value (termed 'MMR 2’) designed to mitigate potential losses on vehicle sales without excessively reducing the estimated wholesale price.The adjustment was applied based on the following logic: If the Composite Risk Score for a vehicle was greater than 0.9, 'MMR 2' was set to 91% of its existing MMR. If the Composite Risk Score was between 0.8 and 0.9, 'MMR 2' was set to 92% of its existing MMR. And so forth for the remaining risk score ranges.
 
