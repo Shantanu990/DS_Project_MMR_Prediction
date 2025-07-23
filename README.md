@@ -91,4 +91,4 @@ on market liquidity and sentiment, thereby refining the risk scoring.
 4. To view the interactive Exploratory Data Analysis (EDA) dashboard. Navigate to the 'EDA dashboard' folder and open the file 'MMR_EDA.pbix' using Power BI.
 5. For a detailed overview of the entire project, including in-depth EDA, model development methodologies, and full results: Navigate to the 'project details' folder and open the file **'MMR Predictive Model.pdf'**.
 
-**Acknowledgment**: Thankful to Kaggel and user named Syed Anwar for publishing the car_prices.csv dataset
+**Acknowledgment**: Thankful to Kaggel and user Syed Anwar for publishing the car_prices.csv dataset
