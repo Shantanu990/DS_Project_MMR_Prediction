@@ -59,10 +59,7 @@ Key metrics included:
 -Average Deviation: The mean difference between the selling price and the predicted value, evaluated before and after model application.
 -Accuracy Metrics: Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and R-squared.
 
-**Tools and libraries used**: Software: Python, Power BI, Excel
-Libraries: xgboost, sklearn, pandas, numpy, matplotlib, shap
-Regression models: XGBRegressor, Random Forest, Linear Regression
-Scalers: Minmax scaler, Standard scaler
+**Tools and libraries used**: Software: Python, Power BI, Excel; Libraries: xgboost, sklearn, pandas, numpy, matplotlib, shap; Regression models: XGBRegressor, Random Forest, Linear Regression; Scalers: Minmax scaler, Standard scaler
 
 **Results & Assessment**: 
 - The predictive model was tested on 20% of the dataset, comprising 106,096 samples. The results demonstrate a significant improvement in profitability and prediction accuracy. A substantial 42.02% reduction was achieved in cases where the predicted MMR value exceeded the sale price, mitigating potential losses.
