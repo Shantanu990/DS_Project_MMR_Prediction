@@ -62,12 +62,13 @@ Key metrics included:
 **Tools and libraries used**: Software: Python, Power BI, Excel; Libraries: xgboost, sklearn, pandas, numpy, matplotlib, shap; Regression models: XGBRegressor, Random Forest, Linear Regression; Scalers: Minmax scaler, Standard scaler
 
 **Results & Assessment**: 
-- The predictive model was tested on 20% of the dataset, comprising 106,096 samples. The results demonstrate a significant improvement in profitability and prediction accuracy. A substantial 42.02% reduction was achieved in cases where the predicted MMR value exceeded the sale price, mitigating potential losses.
+- The predictive model was tested on 20% of the dataset, comprising 106,096 samples. The results demonstrate a significant improvement in profitability and prediction accuracy. A substantial **42.02% reduction was achieved in cases where the predicted MMR value exceeded the sale price**, mitigating potential losses.
 - The average deviation between selling price and MMR saw a remarkable shift from -$153.09 (using Original MMR) to $634.97 (using Predicted MMR 2) within the tested samples, indicating a substantial improvement
 in average profit margin.
 - MAE of 88.38 indicates a minimal deviation in predicted values, especially given the large-scale values of MMR. 
 - While the RMSE of 860.98 is notably higher than MAE, which indicates there are some extreme outlier cases in the prediction. 
-- An R-squared value of 0.9909 confirms that the model is highly accurate at predicting the target value, based on the provided input features.
+- An **R-squared value of 0.9909** confirms that the model is highly accurate at predicting the target value, based on the provided input features.
+- **SHAP analysis** of the predicted value shows that the risk score serves as intended to adjust the original MMR downward, but by a modest range of influence
 
 **Next steps for improving the predictive model**: 
 Following strategies can be used to further improve the predictive model:
@@ -81,7 +82,7 @@ on market liquidity and sentiment, thereby refining the risk scoring.
 - 2 python scripts- "feature_importance_mmr.py" for finding feature importance and "predict_mmr.py" for predicting MMR in the folder 'Python scripts and notebooks'.
 - 2 Notebooks for feature importance and predictive model are also included for reference in the folder 'Python scripts and notebooks'.
 - 1 power bi dashboard showing the details of EDA for find percent negative deviation fro each feature (in the folder 'EDA dashboard').
-- Slide set (MMR Predictive Model.pdf) to provide detailed discription of the project and the results (in the folder ;project description').
+- Slide set (MMR Predictive Model.pdf) to provide detailed discription of the project and the results (in the folder 'project details').
 - The final dataset used for predictive model (mmr.xlsx) in folder 'final dataset'.
 
 **How to run the model**: Pre-requisites: Python environment- python 3.9+, an IDE like JupyterLab, MS Excel and MS Power BI.
