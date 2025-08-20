@@ -82,7 +82,7 @@ on market liquidity and sentiment, thereby refining the risk scoring.
 - 2 python scripts- "feature_importance_mmr.py" for finding feature importance and "predict_mmr.py" for predicting MMR in the folder 'Python scripts and notebooks'.
 - 2 Notebooks for feature importance and predictive model are also included for reference in the folder 'Python scripts and notebooks'.
 - 1 power bi dashboard showing the details of EDA for find percent negative deviation fro each feature (in the folder 'EDA dashboard').
-- Slide set (MMR Predictive Model.pdf) to provide detailed discription of the project and the results (in the folder 'project details').
+- Slide set (**MMR Predictive Model.pdf**) to provide detailed discription of the project and the results (in the folder **'project description'**).
 - The final dataset used for predictive model (mmr.xlsx) in folder 'final dataset'.
 
 **How to run the model**: Pre-requisites: Python environment- python 3.9+, an IDE like JupyterLab, MS Excel and MS Power BI.
@@ -90,6 +90,6 @@ on market liquidity and sentiment, thereby refining the risk scoring.
 2. To determine feature importance: open the file 'python scripts and notebooks/feature_importance_mmr.py' in python IDE. Within the feature_importance_mmr.py script, locate and run the following code blocks in the specified order: upload_files(), normalize_features(), feature_importance(). A simple plot of the feature importances will be displayed directly in your Python environment's console or plot window.
 3. To run the predictive model: open the file 'python scripts and notebooks/predict_mmr.py' in the python IDE. Within the predict_mmr.py script, locate and run the following code blocks: upload_files(), predict_mmr(). metrics demonstrating model improvement, will be displayed in your Python environment's console.
 4. To view the interactive Exploratory Data Analysis (EDA) dashboard. Navigate to the 'EDA dashboard' folder and open the file 'MMR_EDA.pbix' using Power BI.
-5. For a detailed overview of the entire project, including in-depth EDA, model development methodologies, and full results: Navigate to the 'project details' folder and open the file **'MMR Predictive Model.pdf'**.
+5. For a detailed overview of the entire project, including in-depth EDA, model development methodologies, and full results: Navigate to the 'project description' folder and open the file **'MMR Predictive Model.pdf'**.
 
 **Acknowledgment**: Thankful to Kaggel and user Syed Anwar for publishing the car_prices.csv dataset
